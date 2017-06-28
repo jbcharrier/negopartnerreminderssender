@@ -1,0 +1,4 @@
+cron:
+- description: daily audit check job
+  url: /cron
+  schedule: every 24 hours
