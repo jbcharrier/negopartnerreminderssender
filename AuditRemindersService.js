@@ -10,7 +10,6 @@ let sendReminder = function (accounts) {
         if(accounts[key].sites[id].areas[idArea].auditStartDate < dateNow){
           Object.keys(accounts[key].users).forEach(function(userKey){
             if(accounts[key].users[userKey].siteSelected === 'Tous les sites'|| id == accounts[key].users[userKey].siteSelected) {
-              console.log("ENTER ENTER");
               let email = accounts[key].users[userKey].email;
               let accountName = accounts[key].name;
               let siteName = accounts[key].sites[id].name;
